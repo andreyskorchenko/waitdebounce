@@ -1,0 +1,18 @@
+{
+  "name": "waitdebounce",
+  "version": "1.0.0",
+  "description": "Debounce wrapper function.",
+  "keywords": [
+    "wait",
+    "debounce",
+    "javascript"
+  ],
+  "main": "debounce.js",
+  "author": "Andrey Skorchenko <andreyskorchenko@gmail.com>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreyskorchenko/waitdebounce.git"
+  },
+  "homepage": "https://github.com/andreyskorchenko/waitdebounce#readme"
+}
