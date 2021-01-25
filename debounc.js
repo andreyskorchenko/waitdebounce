@@ -1,14 +1,14 @@
-export function debounce(fn, ms) {
-    var to = undefined;
+export function debounce(callback, ms) {
+	var timeoutID = undefined;
 
-    return function() {
-        var tc = this;
-        var ta = arguments;
+	return function() {
+		var self = this;
+		var args = arguments;
 
-        clearTimeout(to);
-
-        to = setTimeout(function() {
-            fn.apply(tc, ta);
-        }, ms);
-    };
-}
+		clearTimeout(timeoutID);
+		
+		timeoutID = setTimeout(function() {
+			callback.apply(self, args);
+		}, ms);
+	};
+};
